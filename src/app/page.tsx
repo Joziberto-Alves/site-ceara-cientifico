@@ -46,11 +46,6 @@ export default function HomePage() {
           agridem o planeta.
         </p>
 
-      {/* Autores */}
-      <section id="autores" className="min-h-screen p-10 bg-white">
-        <Autores/>
-      </section>
-
         <div className="w-full flex justify-center">
           <div className="relative w-full max-w-3xl h-60 sm:h-90 md:h-[70vh] ">
             <Image
@@ -62,6 +57,11 @@ export default function HomePage() {
             />
           </div>
         </div>
+      </section>
+
+      {/* Autores */}
+      <section id="autores" className="min-h-screen p-10 bg-white">
+        <Autores/>
       </section>
 
       <section id="projeto" className="min-h-screen p-6 md:p-12 bg-white scroll-mt-10">
@@ -77,7 +77,7 @@ Como alternativa, o projeto propõe a produção de bioplástico biodegradável 
         <div className="w-full flex justify-center">
           <div className="relative w-full max-w-3xl h-50 sm:h-[70vh] ">
             <Image
-              src="/bioplastico.png" // coloque sua imagem na pasta /public/imagens
+              src="/grupo.jpg" // coloque sua imagem na pasta /public/imagens
               alt="Bioplástico"
               layout="fill"
               objectFit="cover"
