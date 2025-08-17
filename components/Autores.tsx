@@ -31,7 +31,7 @@ const autores: Autor[] = [
   {
     nome: "Taís Teixeira",
     cargo: "Pesquisadora Científica",
-    foto: "/tais.png",
+    foto: "/tais.jpg",
   },
     {
     nome: "Ellen Soraya",
