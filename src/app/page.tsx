@@ -6,7 +6,7 @@ export default function HomePage() {
       <Navbar />
 
       {/* Hero */}
-      <section className="h-screen flex flex-col justify-center items-center text-center bg-gradient-to-b from-green-100 to-white">
+      <section className="h-screen flex flex-col justify-center items-center text-center bg-gradient-to-r from-emerald-50 via-green-100 to-emerald-200">
         <h1 className="text-4xl font-bold text-green-700 mb-4">
           Menos Desperdício, Mais Sustentabilidade
         </h1>
@@ -38,7 +38,7 @@ export default function HomePage() {
       {/* Produção */}
       <section id="producao" className="min-h-screen p-12 bg-green-50">
         <h2 className="text-3xl font-bold text-green-700 mb-6">Produção</h2>
-        <p className="text-gray-700">Aqui podemos explicar as diferentes formas de síntese (arroz, café, soja etc.).</p>
+        <p className="text-gray-700">Aqui podemos explicar as formas de síntese.</p>
       </section>
 
       {/* Galeria */}
@@ -53,7 +53,7 @@ export default function HomePage() {
         <div className="aspect-video max-w-3xl mx-auto">
           <iframe
             className="w-full h-full rounded-xl shadow"
-            src="https://www.youtube.com/embed/VIDEO_ID"
+            src="https://youtu.be/wCUtarVlixw?si=GjnV6clKr7z1LWq4"
             title="Vídeo do projeto"
             allowFullScreen
           ></iframe>

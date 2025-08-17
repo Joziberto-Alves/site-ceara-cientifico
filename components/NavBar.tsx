@@ -35,7 +35,7 @@ const Navbar = () => {
       <div className="max-w-6xl mx-auto px-3 py-3 flex justify-between items-center">
         {/* Logo + Nome */}
         <div className="flex items-center gap-3">
-          <Image src="/logo.png" alt="Logo do Projeto" width={40} height={40} />
+          <Image src="/Logo.png" alt="Logo do Projeto" width={40} height={40} />
           <h1 className="text-green-700 font-bold text-xl">Ceará Científico</h1>
         </div>
 
