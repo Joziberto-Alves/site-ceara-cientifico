@@ -1,5 +1,6 @@
 import Autores from "../../components/Autores";
 import Navbar from "../../components/NavBar";
+import Image from "next/image";
 
 export default function HomePage() {
   return (
@@ -12,7 +13,7 @@ export default function HomePage() {
           Menos Desperdício, Mais Sustentabilidade
         </h1>
         <p className="text-lg text-gray-600 max-w-xl">
-          Produção de Bioplástico a partir de resíduos de baixo valor comercial
+          Produção de Bioplástico a partir de resíduos de batata
         </p>
       </section>
 
@@ -20,28 +21,46 @@ export default function HomePage() {
       <section id="autores" className="min-h-screen p-12 bg-white">
         <Autores/>
       </section>
-     
 
       {/* Introdução */}
       <section id="introducao" className="min-h-screen p-12 bg-green-50">
-        <h2 className="text-3xl font-bold text-green-700 mb-6">Introdução</h2>
-        <p className="text-gray-700">
-          Resumo sobre o problema do plástico convencional e a importância dos bioplásticos.
-        </p>
-      </section>
+  <h2 className="text-3xl font-bold text-center text-green-700 mb-6">Introdução</h2>
+  <p className="text-gray-700 mb-8 text-xl text-center">
+    Você já parou para pensar na quantidade de plástico
+    que usamos todos os dias? Das sacolas que trazem
+    nossas compras às embalagens de alimentos e garrafas
+    de refrigerante, o plástico se tornou parte essencial da
+    nossa vida moderna. No entanto, o que acontece com
+    todo esse material depois que o usamos? A triste verdade
+    é que a maioria dos plásticos leva centenas, ou até
+    milhares, de anos para se decompor na natureza,
+    acumulando-se em nossos solos, rios e oceanos, causando
+    sérios danos ao meio ambiente e à vida selvagem. Essa
+    persistência é um dos grandes desafios da nossa geração,
+    exigindo soluções inovadoras e sustentáveis (NEMITZ,
+    2025).   
+    É aqui que entram os bioplásticos! Diferente dos
+    plásticos comuns, que vêm do petróleo (um recurso não
+    renovável), os bioplásticos são feitos de materiais
+    encontrados na natureza, como o amido de plantas. Isso
+    significa que eles são biodegradáveis, ou seja, se
+    decompõem muito mais rápido no ambiente,
+    transformando-se em elementos naturais que não
+    agridem o planeta.
+  </p>
 
-      {/* Projeto */}
-      <section id="projeto" className="min-h-screen p-12 bg-white">
-        <h2 className="text-3xl font-bold text-green-700 mb-6">O Projeto</h2>
-        <p className="text-gray-700">Objetivo geral e justificativa do projeto.</p>
-      </section>
-
-      {/* Produção */}
-      <section id="producao" className="min-h-screen p-12 bg-green-50">
-        <h2 className="text-3xl font-bold text-green-700 mb-6">Produção</h2>
-        <p className="text-gray-700">Aqui podemos explicar as formas de síntese.</p>
-      </section>
-
+  <div className="w-full flex justify-center">
+    <div className="relative w-full max-w-4xl h-64 sm:h-96">
+      <Image
+        src="/bioplatico.png" // coloque sua imagem na pasta /public/imagens
+        alt="Bioplástico"
+        layout="fill"
+        objectFit="cover"
+        className="rounded-lg shadow-lg"
+      />
+    </div>
+  </div>
+</section>
       {/* Galeria */}
       <section id="galeria" className="min-h-screen p-12 bg-white">
         <h2 className="text-3xl font-bold text-green-700 mb-6">Galeria</h2>
@@ -54,7 +73,7 @@ export default function HomePage() {
         <div className="aspect-video max-w-3xl mx-auto">
           <iframe
             className="w-full h-full rounded-xl shadow"
-            src="https://youtu.be/wCUtarVlixw?si=GjnV6clKr7z1LWq4"
+            src="https://www.youtube.com/embed/https://youtu.be/wCUtarVlixw?si=jc6su_kBf6xatuqN"
             title="Vídeo do projeto"
             allowFullScreen
           ></iframe>
@@ -82,6 +101,7 @@ export default function HomePage() {
       {/* Footer */}
       <footer className="bg-green-700 text-white text-center py-4">
         <p>© 2025 Ceará Científico - Todos os direitos reservados</p>
+        <p>made by Joziberto Alves</p>
       </footer>
     </div>
   );

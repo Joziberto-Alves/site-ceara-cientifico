@@ -11,7 +11,7 @@ const autores: Autor[] = [
     {
     nome: "Angélica Brito",
     cargo: "Orientadora",
-    foto: "/angelica.png",
+    foto: "/angelica.jpg",
   },
   {
     nome: "Joziberto Alves",
@@ -25,17 +25,17 @@ const autores: Autor[] = [
   },
   {
     nome: "Patrícia Santos",
-    cargo: "Pesquisador Científico",
+    cargo: "Pesquisadora Científica",
     foto: "/patricia.jpg",
   },
   {
     nome: "Taís Teixeira",
-    cargo: "Pesquisador Científico",
+    cargo: "Pesquisadora Científica",
     foto: "/tais.png",
   },
     {
     nome: "Ellen Soraya",
-    cargo: "Pesquisador Científico",
+    cargo: "Pesquisadora Científica",
     foto: "/elen.png",
   },
 ];
