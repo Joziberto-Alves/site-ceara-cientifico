@@ -1,4 +1,5 @@
 import Autores from "../../components/Autores";
+import Galeria from "../../components/Galeria";
 import Navbar from "../../components/NavBar";
 import Image from "next/image";
 
@@ -61,13 +62,8 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-      {/* Galeria */}
-      <section id="galeria" className="min-h-screen p-12 bg-white">
-        <h2 className="text-3xl font-bold text-green-700 mb-6 text-center">Galeria</h2>
-        <p className="text-gray-700">Aqui vai entrar o carrossel de fotos do processo.</p>
-      </section>
 
-            <section id="projeto" className="min-h-screen p-12 bg-green-50">
+      <section id="projeto" className="min-h-screen p-12 bg-green-50">
         <h2 className="text-3xl font-bold text-center text-green-700 mb-6">Andamento do projeto</h2>
         <p className="text-gray-700 mb-8 text-xl text-center">
             O projeto “Menos Desperdício, Mais Sustentabilidade: Produção de Bioplástico a partir de Batatas de Baixo Valor Comercial para Conservação de Frutas”, desenvolvido por alunos da Escola Estadual de Educação Profissional Luiz Gonzaga Fonseca Mota, em Amontada-CE, integra o Ceará Científico 2025.
@@ -90,6 +86,7 @@ Como alternativa, o projeto propõe a produção de bioplástico biodegradável 
         </div>
       </section>
 
+      
       {/* Vídeo */}
       <section id="video" className="md:min-h-screen p-12 bg-green-50">
         <h2 className="text-3xl font-bold text-green-700 mb-6 text-center">Vídeo</h2>
@@ -103,28 +100,43 @@ Como alternativa, o projeto propõe a produção de bioplástico biodegradável 
         </div>
       </section>
 
+      {/* Galeria */}
+      <section id="galeria" className="min-h-screen p-12 bg-white">
+        <Galeria/>
+      </section>
+      
       {/* Guia */}
-      <section id="guia" className="min-h-screen p-12 bg-white">
-        <h2 className="text-3xl font-bold text-green-700 mb-6">Guia</h2>
-        <a
-          href="/Guia.pdf"
-          download
-          className="bg-green-700 text-white px-6 py-3 rounded-lg shadow hover:bg-green-800 transition"
-        >
-          📥 Baixar Guia Completo
+      <section id="guia" className=" p-12 bg-white text-center ">
+        <h2 className="text-3xl font-bold text-green-700 mb-6 text-center">Guia</h2>
+        <p className="text-gray-700 mb-4">
+          Este guia foi criado para apresentar de forma simples e acessível os principais conceitos sobre os bioplásticos, destacando sua importância como alternativa sustentável ao plástico comum. Aqui você encontrará explicações, exemplos práticos e informações úteis que mostram como a ciência pode ajudar a construir um futuro mais equilibrado com o meio ambiente.
+        </p>
+        <a href="/Guia.pdf" target="_blank" className="bg-green-700 text-white px-6 py-3 rounded-lg shadow hover:bg-green-800 transition">
+          Abrir PDF em outra aba
         </a>
+
       </section>
 
       {/* Documentação */}
-      <section id="documentacao" className="min-h-screen p-12 bg-green-50">
+      <section id="documentacao" className="p-12 bg-green-50 text-center">
         <h2 className="text-3xl font-bold text-green-700 mb-6">Documentação</h2>
         <p className="text-gray-700">Aqui entram as referências e detalhes técnicos.</p>
+        <h3 className="text-xl font-bold text-green-700 my-6 ">Artigo</h3>
+        <a href="/artigo.pdf" target="_blank" className="bg-green-700 text-white px-6 py-3 rounded-lg shadow hover:bg-green-800 transition">
+          Abrir PDF em outra aba
+        </a>
+        <h3 className="text-xl font-bold text-green-700 my-6 ">Anexos</h3>
+        <a href="/Anexos.pdf" target="_blank" className="bg-green-700 text-white px-6 py-3 rounded-lg shadow hover:bg-green-800 transition">
+          Abrir PDF em outra aba
+        </a>
+
       </section>
 
       {/* Footer */}
       <footer className="bg-green-700 text-white text-center py-4">
-        <p>© 2025 Ceará Científico - Todos os direitos reservados</p>
-        <p>made by Joziberto Alves</p>
+        <p>
+        Site desenvolvido por <strong>Joziberto Alves</strong> © {new Date().getFullYear()}
+      </p>
       </footer>
     </div>
   );

@@ -11,10 +11,29 @@ import "swiper/css/navigation";
 
 export default function Galeria() {
   const imagens = [
-    { src: "/images/foto1.jpg", alt: "Preparação dos materiais" },
-    { src: "/images/foto2.jpg", alt: "Produção do bioplástico" },
-    { src: "/images/foto3.jpg", alt: "Equipe trabalhando" },
-    { src: "/images/foto4.jpg", alt: "Teste do produto final" },
+    { src: "/galeria01.jpg", alt: "galeria" },
+    { src: "/galeria02.jpg", alt: "galeria" },
+    { src: "/galeria03.jpg", alt: "galeria" },
+    { src: "/galeria04.jpg", alt: "galeria" },
+    { src: "/galeria05.jpg", alt: "galeria" },
+    { src: "/galeria06.jpg", alt: "galeria" },
+    { src: "/galeria07.jpg", alt: "galeria" },
+    { src: "/galeria08.jpg", alt: "galeria" },
+    { src: "/galeria09.jpg", alt: "galeria" },
+    { src: "/galeria10.jpg", alt: "galeria" },
+    { src: "/galeria11.jpg", alt: "galeria" },
+    { src: "/galeria12.jpg", alt: "galeria" },    
+    { src: "/galeria13.jpg", alt: "galeria" },    
+    { src: "/galeria14.jpg", alt: "galeria" },    
+    { src: "/galeria15.jpg", alt: "galeria" },    
+    { src: "/galeria16.jpg", alt: "galeria" },    
+    { src: "/galeria17.jpg", alt: "galeria" },    
+    { src: "/galeria18.jpg", alt: "galeria" },    
+    { src: "/galeria19.jpg", alt: "galeria" },    
+    { src: "/galeria20.jpg", alt: "galeria" },    
+    { src: "/galeria21.jpg", alt: "galeria" },    
+    { src: "/galeria22.jpg", alt: "galeria" },    
+    { src: "/galeria23.jpg", alt: "galeria" },
   ];
 
   return (
@@ -25,7 +44,7 @@ export default function Galeria() {
       </p>
 
       <Swiper
-        modules={[Autoplay, Pagination, Navigation]}
+        modules={[Autoplay, Navigation]}
         spaceBetween={30}
         centeredSlides={true}
         autoplay={{
@@ -34,7 +53,7 @@ export default function Galeria() {
         }}
         pagination={{ clickable: true }}
         navigation={true}
-        className="max-w-4xl mx-auto rounded-xl shadow-lg"
+        className="max-w-xs md:max-w-[30vw] mx-auto rounded-xl shadow-lg"
       >
         {imagens.map((img, i) => (
           <SwiperSlide key={i}>
@@ -43,7 +62,7 @@ export default function Galeria() {
               alt={img.alt}
               width={800}
               height={500}
-              className="w-full h-auto object-cover rounded-xl"
+              className="w-full h-[75vh] object-cover rounded-xl"
             />
           </SwiperSlide>
         ))}
