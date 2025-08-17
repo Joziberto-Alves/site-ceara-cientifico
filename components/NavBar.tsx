@@ -19,8 +19,8 @@ const Navbar = () => {
 const [menuOpen, setMenuOpen] = useState(false);
 
 const links = [
-    { href: "#autores", label: "Autores", icon: <Users className="w-4 h-4" /> },
     { href: "#introducao", label: "Introdução", icon: <BookOpen className="w-4 h-4" /> },
+    { href: "#autores", label: "Autores", icon: <Users className="w-4 h-4" /> },
     { href: "#projeto", label: "Projeto", icon: <FileText className="w-4 h-4" /> },
     { href: "#video", label: "Vídeo", icon: <Video className="w-4 h-4" /> },
     { href: "#galeria", label: "Galeria", icon: <ImageIcon className="w-4 h-4" /> },

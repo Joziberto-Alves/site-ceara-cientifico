@@ -18,13 +18,9 @@ export default function HomePage() {
         </p>
       </section>
 
-      {/* Autores */}
-      <section id="autores" className="min-h-screen p-10 bg-white">
-        <Autores/>
-      </section>
 
       {/* Introdução */}
-      <section id="introducao" className="min-h-screen p-6 bg-green-50">
+      <section id="introducao" className="min-h-screen p-6 md:p-12 bg-green-50 scroll-mt-10">
         <h2 className="text-3xl font-bold text-center text-green-700 mb-6">Introdução</h2>
         <p className="text-gray-700 mb-8 text-l md:text-xl">
           Você já parou para pensar na quantidade de plástico
@@ -50,10 +46,15 @@ export default function HomePage() {
           agridem o planeta.
         </p>
 
+      {/* Autores */}
+      <section id="autores" className="min-h-screen p-10 bg-white">
+        <Autores/>
+      </section>
+
         <div className="w-full flex justify-center">
           <div className="relative w-full max-w-3xl h-60 sm:h-90 md:h-[70vh] ">
             <Image
-              src="/bioplastico.png" // coloque sua imagem na pasta /public/imagens
+              src="/bioplastico.png"
               alt="Bioplástico"
               layout="fill"
               objectFit="cover"
@@ -63,7 +64,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section id="projeto" className="min-h-screen p-6 bg-white">
+      <section id="projeto" className="min-h-screen p-6 md:p-12 bg-white scroll-mt-10">
         <h2 className="text-3xl font-bold text-center text-green-700 mb-6">Andamento do projeto</h2>
         <p className="text-gray-700 mb-8 text-l md:text-xl ">
             O projeto “Menos Desperdício, Mais Sustentabilidade: Produção de Bioplástico a partir de Batatas de Baixo Valor Comercial para Conservação de Frutas”, desenvolvido por alunos da Escola Estadual de Educação Profissional Luiz Gonzaga Fonseca Mota, em Amontada-CE, integra o Ceará Científico 2025.
@@ -88,7 +89,7 @@ Como alternativa, o projeto propõe a produção de bioplástico biodegradável 
 
       
       {/* Vídeo */}
-      <section id="video" className="md:min-h-screen p-12 bg-green-50">
+      <section id="video" className="md:min-h-screen p-12 bg-green-50 scroll-mt-10">
         <h2 className="text-3xl font-bold text-green-700 mb-6 text-center">Vídeo</h2>
         <div className="aspect-video max-w-3xl mx-auto">
           <iframe
@@ -101,14 +102,14 @@ Como alternativa, o projeto propõe a produção de bioplástico biodegradável 
       </section>
 
       {/* Galeria */}
-      <section id="galeria" className="min-h-screen  bg-white">
+      <section id="galeria" className="min-h-screen bg-white scroll-mt-16">
         <Galeria/>
       </section>
       
       {/* Guia */}
       <section id="guia" className="p-6 bg-white text-center ">
         <h2 className="text-3xl font-bold text-green-700 mb-6 text-center">Guia</h2>
-        <p className="text-gray-700 mb-4">
+        <p className="text-gray-700 mb-4 text-start">
           Este guia foi criado para apresentar de forma simples e acessível os principais conceitos sobre os bioplásticos, destacando sua importância como alternativa sustentável ao plástico comum. Aqui você encontrará explicações, exemplos práticos e informações úteis que mostram como a ciência pode ajudar a construir um futuro mais equilibrado com o meio ambiente.
         </p>
         <a href="/Guia.pdf" target="_blank" className="bg-green-700 text-white px-6 py-3 rounded-lg shadow hover:bg-green-800 transition">
