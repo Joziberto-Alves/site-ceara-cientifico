@@ -37,7 +37,7 @@ export default function Galeria() {
   ];
 
   return (
-    <section id="galeria" className="min-h-screen p-12 bg-white">
+    <section id="galeria" className="min-h-screen p-y bg-white p-2">
       <h2 className="text-3xl font-bold text-green-700 mb-6 text-center">Galeria do Projeto</h2>
       <p className="text-gray-600 mb-8 text-center">
         Confira algumas fotos registradas durante a produção do nosso trabalho.
@@ -53,7 +53,7 @@ export default function Galeria() {
         }}
         pagination={{ clickable: true }}
         navigation={true}
-        className="max-w-xs md:max-w-[30vw] mx-auto rounded-xl shadow-lg"
+        className="max-w-s sm:max-w-xl md:max-w-[40vw] mx-auto rounded-xl shadow-lg"
       >
         {imagens.map((img, i) => (
           <SwiperSlide key={i}>
@@ -62,7 +62,7 @@ export default function Galeria() {
               alt={img.alt}
               width={800}
               height={500}
-              className="w-full h-[75vh] object-cover rounded-xl"
+              className="w-full h-[70vh] object-cover rounded-xl"
             />
           </SwiperSlide>
         ))}
