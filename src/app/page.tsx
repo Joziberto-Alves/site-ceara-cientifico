@@ -19,14 +19,14 @@ export default function HomePage() {
       </section>
 
       {/* Autores */}
-      <section id="autores" className="min-h-screen p-12 bg-white">
+      <section id="autores" className="min-h-screen p-10 bg-white">
         <Autores/>
       </section>
 
       {/* Introdução */}
-      <section id="introducao" className="min-h-screen p-12 bg-green-50">
+      <section id="introducao" className="min-h-screen p-6 bg-green-50">
         <h2 className="text-3xl font-bold text-center text-green-700 mb-6">Introdução</h2>
-        <p className="text-gray-700 mb-8 text-xl text-center">
+        <p className="text-gray-700 mb-8 text-l md:text-xl">
           Você já parou para pensar na quantidade de plástico
           que usamos todos os dias? Das sacolas que trazem
           nossas compras às embalagens de alimentos e garrafas
@@ -51,7 +51,7 @@ export default function HomePage() {
         </p>
 
         <div className="w-full flex justify-center">
-          <div className="relative w-full max-w-3xl h-50 sm:h-[70vh] ">
+          <div className="relative w-full max-w-3xl h-60 sm:h-90 md:h-[70vh] ">
             <Image
               src="/bioplastico.png" // coloque sua imagem na pasta /public/imagens
               alt="Bioplástico"
@@ -63,9 +63,9 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section id="projeto" className="min-h-screen p-12 bg-green-50">
+      <section id="projeto" className="min-h-screen p-6 bg-white">
         <h2 className="text-3xl font-bold text-center text-green-700 mb-6">Andamento do projeto</h2>
-        <p className="text-gray-700 mb-8 text-xl text-center">
+        <p className="text-gray-700 mb-8 text-l md:text-xl ">
             O projeto “Menos Desperdício, Mais Sustentabilidade: Produção de Bioplástico a partir de Batatas de Baixo Valor Comercial para Conservação de Frutas”, desenvolvido por alunos da Escola Estadual de Educação Profissional Luiz Gonzaga Fonseca Mota, em Amontada-CE, integra o Ceará Científico 2025.
 
 O plástico é amplamente utilizado na sociedade moderna por sua durabilidade, baixo custo e versatilidade, especialmente em embalagens de alimentos, setor em que seu uso cresce cerca de 5% ao ano. No entanto, os plásticos convencionais causam impactos ambientais e riscos à saúde humana, devido à sua origem fóssil, lenta degradação e liberação de micropoluentes.
@@ -101,12 +101,12 @@ Como alternativa, o projeto propõe a produção de bioplástico biodegradável 
       </section>
 
       {/* Galeria */}
-      <section id="galeria" className="min-h-screen p-12 bg-white">
+      <section id="galeria" className="min-h-screen  bg-white">
         <Galeria/>
       </section>
       
       {/* Guia */}
-      <section id="guia" className=" p-12 bg-white text-center ">
+      <section id="guia" className="p-6 bg-white text-center ">
         <h2 className="text-3xl font-bold text-green-700 mb-6 text-center">Guia</h2>
         <p className="text-gray-700 mb-4">
           Este guia foi criado para apresentar de forma simples e acessível os principais conceitos sobre os bioplásticos, destacando sua importância como alternativa sustentável ao plástico comum. Aqui você encontrará explicações, exemplos práticos e informações úteis que mostram como a ciência pode ajudar a construir um futuro mais equilibrado com o meio ambiente.
@@ -118,7 +118,7 @@ Como alternativa, o projeto propõe a produção de bioplástico biodegradável 
       </section>
 
       {/* Documentação */}
-      <section id="documentacao" className="p-12 bg-green-50 text-center">
+      <section id="documentacao" className="p-6 bg-green-50 text-center">
         <h2 className="text-3xl font-bold text-green-700 mb-6">Documentação</h2>
         <p className="text-gray-700">Aqui entram as referências e detalhes técnicos.</p>
         <h3 className="text-xl font-bold text-green-700 my-6 ">Artigo</h3>
