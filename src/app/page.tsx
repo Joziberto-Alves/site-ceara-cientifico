@@ -1,3 +1,4 @@
+import Autores from "../../components/Autores";
 import Navbar from "../../components/NavBar";
 
 export default function HomePage() {
@@ -17,9 +18,9 @@ export default function HomePage() {
 
       {/* Autores */}
       <section id="autores" className="min-h-screen p-12 bg-white">
-        <h2 className="text-3xl font-bold text-green-700 mb-6">Autores</h2>
-        <p className="text-gray-700">Aqui entra a apresentação da equipe e professora orientadora.</p>
+        <Autores/>
       </section>
+     
 
       {/* Introdução */}
       <section id="introducao" className="min-h-screen p-12 bg-green-50">
