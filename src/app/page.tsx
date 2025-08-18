@@ -14,7 +14,7 @@ export default function HomePage() {
           Menos Desperdício, Mais Sustentabilidade
         </h1>
         <p className="text-lg text-gray-600 max-w-xl">
-          Produção de Bioplástico a partir de resíduos de batatas
+          Produção de Bioplástico a partir de batatas com baixo valor comercial
         </p>
       </section>
 
@@ -22,7 +22,7 @@ export default function HomePage() {
       {/* Introdução */}
       <section id="introducao" className="min-h-screen p-6 md:p-12 bg-green-50 scroll-mt-10">
         <h2 className="text-3xl font-bold text-center text-green-700 mb-6">Introdução</h2>
-        <p className="text-gray-700 mb-8 text-l md:text-xl">
+        <p className="text-gray-700 mb-8 text-l md:text-xl text-justify leading-relaxed">
           Você já parou para pensar na quantidade de plástico
           que usamos todos os dias? Das sacolas que trazem
           nossas compras às embalagens de alimentos e garrafas
@@ -66,7 +66,7 @@ export default function HomePage() {
 
       <section id="projeto" className="min-h-screen p-6 md:p-12 bg-white scroll-mt-10">
         <h2 className="text-3xl font-bold text-center text-green-700 mb-6">Andamento do projeto</h2>
-        <p className="text-gray-700 mb-8 text-l md:text-xl ">
+        <p className="text-gray-700 mb-8 text-l md:text-xl text-justify leading-relaxed">
             O projeto “Menos Desperdício, Mais Sustentabilidade: Produção de Bioplástico a partir de Batatas de Baixo Valor Comercial para Conservação de Frutas”, desenvolvido por alunos da Escola Estadual de Educação Profissional Luiz Gonzaga Fonseca Mota, em Amontada-CE, integra o Ceará Científico 2025.
 
 O plástico é amplamente utilizado na sociedade moderna por sua durabilidade, baixo custo e versatilidade, especialmente em embalagens de alimentos, setor em que seu uso cresce cerca de 5% ao ano. No entanto, os plásticos convencionais causam impactos ambientais e riscos à saúde humana, devido à sua origem fóssil, lenta degradação e liberação de micropoluentes.
@@ -105,33 +105,36 @@ Como alternativa, o projeto propõe a produção de bioplástico biodegradável 
       <section id="galeria" className="min-h-screen bg-white scroll-mt-16">
         <Galeria/>
       </section>
+
+      <div className="md:flex">
       
-      {/* Guia */}
-      <section id="guia" className="p-6 bg-white text-center ">
-        <h2 className="text-3xl font-bold text-green-700 mb-6 text-center">Guia</h2>
-        <p className="text-gray-700 mb-4 text-start">
-          Este guia foi criado para apresentar de forma simples e acessível os principais conceitos sobre os bioplásticos, destacando sua importância como alternativa sustentável ao plástico comum. Aqui você encontrará explicações, exemplos práticos e informações úteis que mostram como a ciência pode ajudar a construir um futuro mais equilibrado com o meio ambiente.
-        </p>
-        <a href="/Guia.pdf" target="_blank" className="bg-green-700 text-white px-6 py-3 rounded-lg shadow hover:bg-green-800 transition">
-          Abrir PDF em outra aba
-        </a>
+        {/* Guia */}
+        <section id="guia" className="p-6 bg-green-50 text-center md:w-[50vw]">
+          <h2 className="text-3xl font-bold text-green-700 mb-6 text-center">Guia</h2>
+          <p className="text-gray-700 mb-4 text-justify leading-relaxed">
+            Este guia foi criado para apresentar de forma simples e acessível os principais conceitos sobre os bioplásticos, destacando sua importância como alternativa sustentável ao plástico comum. Aqui você encontrará explicações, exemplos práticos e informações úteis que mostram como a ciência pode ajudar a construir um futuro mais equilibrado com o meio ambiente.
+          </p>
+          <a href="/Guia.pdf" target="_blank" className="bg-green-700 text-white px-6 py-3 rounded-lg shadow hover:bg-green-800 transition">
+            Abrir PDF em outra aba
+          </a>
 
-      </section>
+        </section>
 
-      {/* Documentação */}
-      <section id="documentacao" className="p-6 bg-green-50 text-center">
-        <h2 className="text-3xl font-bold text-green-700 mb-6">Documentação</h2>
-        <p className="text-gray-700">Aqui entram as referências e detalhes técnicos.</p>
-        <h3 className="text-xl font-bold text-green-700 my-6 ">Artigo</h3>
-        <a href="/artigo.pdf" target="_blank" className="bg-green-700 text-white px-6 py-3 rounded-lg shadow hover:bg-green-800 transition">
-          Abrir PDF em outra aba
-        </a>
-        <h3 className="text-xl font-bold text-green-700 my-6 ">Anexos</h3>
-        <a href="/Anexos.pdf" target="_blank" className="bg-green-700 text-white px-6 py-3 rounded-lg shadow hover:bg-green-800 transition">
-          Abrir PDF em outra aba
-        </a>
+        {/* Documentação */}
+        <section id="documentacao" className="p-6 bg-green-50 text-center md:w-[50vw]">
+          <h2 className="text-3xl font-bold text-green-700 mb-6">Documentação</h2>
+          <p className="text-gray-700">Aqui entram as referências e detalhes técnicos.</p>
+          <h3 className="text-xl font-bold text-green-700 my-6 ">Artigo</h3>
+          <a href="/artigo.pdf" target="_blank" className="bg-green-700 text-white px-6 py-3 rounded-lg shadow hover:bg-green-800 transition">
+            Abrir PDF em outra aba
+          </a>
+          <h3 className="text-xl font-bold text-green-700 my-6 ">Anexos</h3>
+          <a href="/Anexos.pdf" target="_blank" className="bg-green-700 text-white px-6 py-3 rounded-lg shadow hover:bg-green-800 transition">
+            Abrir PDF em outra aba
+          </a>
 
-      </section>
+        </section>
+      </div>
 
       {/* Footer */}
       <footer className="bg-green-700 text-white text-center py-4">

@@ -19,7 +19,7 @@ const autores: Autor[] = [
     foto: "/FotoPerfil.jpg",
   },
   {
-    nome: "Thafiny de Aguiar",
+    nome: "Thafiny Aguiar",
     cargo: "Apresentadora",
     foto: "/thafiny.jpg",
   },
