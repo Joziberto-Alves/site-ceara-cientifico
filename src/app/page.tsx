@@ -1,6 +1,6 @@
-import Autores from "../../components/Autores";
-import Galeria from "../../components/Galeria";
-import Navbar from "../../components/NavBar";
+import Autores from "@/components/Autores";
+import Galeria from "@/components/Galeria";
+import Navbar from "@/components/NavBar";
 import Image from "next/image";
 
 export default function HomePage() {
